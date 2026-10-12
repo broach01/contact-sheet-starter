@@ -8,9 +8,9 @@ You need your own GitHub account, Vercel account, personal Google account and Go
 
 ## 1. Make your own repository
 
-Open https://github.com/broach01/contact-sheet-starter and choose Fork. This creates your own source copy in your GitHub account. Do not change David's production app. You can also download the ZIP and upload its contents to a new private repository, as before.
+Use the README Deploy with Vercel button to clone the source into your own GitHub account and start a hosting project. It prompts for OWNER_EMAIL and SESSION_SECRET only. After the first deployment continue with steps 3–7 below. Alternatively, open https://github.com/broach01/contact-sheet-starter and choose Fork. This creates your own source copy in your GitHub account. Do not change David's production app. You can also download the ZIP and upload its contents to a new private repository, as before.
 
-## 2. Import your copy into Vercel
+## 2. Import your copy into Vercel (if you used Fork)
 
 In Vercel choose Add New > Project and import YOUR fork. You do not need a local terminal for this hosted route: Vercel installs dependencies and builds the app. Desktop is recommended for the Google and hosting consoles. Phone-only completion has not been verified.
 
@@ -22,7 +22,7 @@ npm test
 npm run build
 ```
 
-These check the source and simulated install flow, not real account connections. A plain Vite server is a front-end preview, not the working API. Secrets, node_modules, dist and .vercel do not belong in the repository.
+These check the source and simulated install flow, not real account connections. The build restores bundled font/icon assets from integrity-checked scripts/bundled-assets.json. A plain Vite server is a front-end preview, not the working API. Secrets, node_modules, dist and .vercel do not belong in the repository.
 
 ## 3. Create your hosting project and private proof storage
 
