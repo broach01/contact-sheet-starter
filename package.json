@@ -4,8 +4,8 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
+    "build": "node scripts/prepare-assets.mjs && vite build",
+    "dev": "node scripts/prepare-assets.mjs && vite",
     "test": "node --test tests/*.test.mjs && npm run test:install",
     "server:dev": "vercel dev",
     "deploy": "vercel --prod",
@@ -25,5 +25,6 @@
   },
   "engines": {
     "node": ">=22.0.0"
-  }
+  },
+  "license": "MIT"
 }
