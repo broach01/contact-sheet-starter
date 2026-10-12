@@ -2,6 +2,10 @@
 
 A single-owner client photo gallery that runs on your own Vercel and Google Drive accounts. Clients view a private link, mark selections and leave notes. Optional web/hi-res downloads and proof watermarks are included.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbroach01%2Fcontact-sheet-starter&project-name=contact-sheet&repository-name=contact-sheet&env=OWNER_EMAIL,SESSION_SECRET)
+
+The deploy button creates your source copy and prompts for owner email/session secret. It is only the first step: private Blob storage, APP_ORIGIN, your Google OAuth client and live verification are still required. Follow the guide after the first deployment.
+
 ## Start here
 
 1. [Fork this repository](https://github.com/broach01/contact-sheet-starter/fork).
