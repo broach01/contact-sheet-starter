@@ -1,0 +1,1 @@
+export async function resolve(spec,context,next){if(spec==='@vercel/blob')return{url:new URL('./blob.mjs',import.meta.url).href,shortCircuit:true};if(spec==='@vercel/blob/client')return{url:'data:text/javascript,export async function handleUpload(){}',shortCircuit:true};return next(spec,context)}
